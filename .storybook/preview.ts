@@ -34,7 +34,7 @@ const preview: Preview = {
           name: 'desktop',
           styles: { width: '1920px', height: '1080px' },
         },
-        mobile: { name: 'mobile', styles: { width: '200px', height: '400px' } }, // Viewport width range [200, 2560]
+        mobile: { name: 'mobile', styles: { width: '350px', height: '800px' } }, // Viewport width range [200, 2560]
         defaultViewport: 'responsive',
       },
     },

@@ -107,10 +107,6 @@ node themes/tools/muigen.mjs dark darkmuitheme ./themes/tokens.json Theme
 ```bash
 npx chromatic --project-token=your_token_goes_here
 ```
-*or create .env file and add variable project-token=your_token_goes_here*
-```bash
-npm run chromatic
-```
 
 ## Figma designs in Storybook (optional integration)
 
