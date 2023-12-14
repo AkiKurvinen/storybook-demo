@@ -35,8 +35,9 @@ export const StockListSkeleton: FC<SkeletonProps> = ({ ...props }) => (
 
 const UnstyledStockList = ({ heading, admin, ...props }: StockListProps) => {
   return (
+    <>
+    {heading && <Typography variant='body1'>{heading}</Typography>}
     <ul {...props}>
-      {heading && <Typography variant='body1'>{heading}</Typography>}
       {!props.data && <StockItemSkeleton width={'100%'} />}
       {props.data &&
         props.data.items &&
@@ -50,7 +51,7 @@ const UnstyledStockList = ({ heading, admin, ...props }: StockListProps) => {
           />
         ))}
     </ul>
-  );
+</>  );
 };
 
 export const StockList = styled(UnstyledStockList)`
