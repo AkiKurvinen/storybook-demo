@@ -43,4 +43,3 @@ next-env.d.ts
 # other
 build-storybook.log
 chromatic.log
-.env
